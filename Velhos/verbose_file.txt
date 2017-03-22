@@ -1,0 +1,19 @@
+2017-02-15 15:33:42
+
+* Rebuilt URL to: http://www.camara.gov.br/
+* Hostname www.camara.gov.br was found in DNS cache
+*   Trying 200.219.133.59...
+* Connected to www.camara.gov.br (200.219.133.59) port 80 (#0)
+> GET / HTTP/1.1
+Host: www.camara.gov.br
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36
+Accept: */*
+
+< HTTP/1.1 302 Found
+< Date: Wed, 15 Feb 2017 15:33:39 GMT
+< Server: Apache
+< Location: http://www2.camara.leg.br/
+< Content-Length: 210
+< Content-Type: text/html; charset=iso-8859-1
+< 
+* Connection #0 to host www.camara.gov.br left intact
