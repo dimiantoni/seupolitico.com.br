@@ -5,16 +5,13 @@
 <div style="min-height: 550px;" id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
         <div class="container">
-            <br><br>
-            <h1 class="header center">Acompanhe seus representantes no congresso</h1>
+            <h2 class="header center">Acompanhe seus representantes no congresso</h2>
             <div class="row center">
                 <h5 class="header col s12 light">Aqui você encontra a relação de Deputados Federais</h5>
             </div>
             <div class="row center">
-                <a href="#lista" style="color: #26a69a;" id="download-button" class="btn-large waves-effect waves-light grey lighten-5 z-depth-5">Ver Deputados</a>
+                <a href="{{url('/politicos')}}" id="download-button" class="btn-large waves-effect waves-light grey teal-text lighten-5 z-depth-5">Ver Deputados</a>
             </div>
-            <br><br>
-
         </div>
     </div>
     <div class="parallax"><img src="images/header-banner.jpg" alt="Unsplashed background img 1"></div>
