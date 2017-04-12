@@ -14,5 +14,6 @@
 		alignment: 'left', // Displays dropdown with edge aligned to the left of button
 		stopPropagation: false // Stops event propagation
 	});
+	$('.carousel.carousel-slider').carousel({fullWidth: true});
   }); // end of document ready
 })(jQuery); // end of jQuery name space
