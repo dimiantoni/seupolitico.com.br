@@ -3806,5 +3806,52 @@
             "rest",
             "web service"
         ]
+    },
+    {
+        "name": "clarification/sparkpost-laravel-driver",
+        "version": "1.2.3",
+        "version_normalized": "1.2.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/clarification/sparkpost-laravel-driver.git",
+            "reference": "b9642934be369ff69591186ad3e268c03bd3b5a3"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/clarification/sparkpost-laravel-driver/zipball/b9642934be369ff69591186ad3e268c03bd3b5a3",
+            "reference": "b9642934be369ff69591186ad3e268c03bd3b5a3",
+            "shasum": ""
+        },
+        "require": {
+            "guzzlehttp/guzzle": ">=5.0",
+            "illuminate/container": ">=5.0",
+            "swiftmailer/swiftmailer": "~5.1"
+        },
+        "time": "2016-11-13T17:27:53+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Clarification\\MailDrivers\\Sparkpost\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Robin Lidbetter",
+                "role": "Developer"
+            }
+        ],
+        "description": "Sparkpost mail driver for Laravel",
+        "homepage": "http://clarification.io",
+        "keywords": [
+            "driver",
+            "laravel",
+            "mail",
+            "sparkpost"
+        ]
     }
 ]

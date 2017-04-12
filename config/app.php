@@ -178,6 +178,11 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        /*
+         * Service Providers to configure send mail with Sparkpost
+         */
+        Clarification\MailDrivers\Sparkpost\SparkpostServiceProvider::class,
+
     ],
 
     /*

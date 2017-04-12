@@ -95,10 +95,14 @@
     <div id="contato" class="section scrollspy">
         <div class="row">
             <div class="col s12 center">
-                <h3><i class="mdi-content-send brown-text"></i></h3>
+                <h1 class="icons-home"><i class="large material-icons">contact_mail</i></h1>
+                <h4>Entre em contato conosco e saiba como ajudar</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 center">
                 <div class="row">
                     <form class="col s12">
-                        <h5>Entre em contato conosco e saiba como ajudar</h5>
                       <div class="row">
                         <div class="input-field col s6">
                           <i class="material-icons prefix">account_circle</i>

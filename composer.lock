@@ -4,8 +4,53 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "17943f70195944882146fd5b4ad9fcef",
+    "content-hash": "ac8e2393330b5a5ff0afe5454f3d9dcc",
     "packages": [
+        {
+            "name": "clarification/sparkpost-laravel-driver",
+            "version": "1.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/clarification/sparkpost-laravel-driver.git",
+                "reference": "b9642934be369ff69591186ad3e268c03bd3b5a3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/clarification/sparkpost-laravel-driver/zipball/b9642934be369ff69591186ad3e268c03bd3b5a3",
+                "reference": "b9642934be369ff69591186ad3e268c03bd3b5a3",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": ">=5.0",
+                "illuminate/container": ">=5.0",
+                "swiftmailer/swiftmailer": "~5.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Clarification\\MailDrivers\\Sparkpost\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Robin Lidbetter",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Sparkpost mail driver for Laravel",
+            "homepage": "http://clarification.io",
+            "keywords": [
+                "driver",
+                "laravel",
+                "mail",
+                "sparkpost"
+            ],
+            "time": "2016-11-13T17:27:53+00:00"
+        },
         {
             "name": "classpreloader/classpreloader",
             "version": "3.1.0",
