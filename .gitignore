@@ -1,6 +1,6 @@
-./node_modules
-./storage
-./vendor
+node_modules
+storage
+vendor
 .idea
 .env
 .env.example

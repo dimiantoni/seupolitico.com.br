@@ -2,46 +2,31 @@
 
 <!-- Main Content -->
 @section('content')
-<div class="container">
+<div class="container col s12">
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Recuperar Senha</div>
-                <div class="panel-body">
-                    @if (session('status'))
-                        <div class="alert alert-success">
-                            {{ session('status') }}
-                        </div>
+        <form class="form-horizontal" role="form" method="POST" action="{{ url('/password/email') }}">
+            {{ csrf_field() }}
+            <h4 class="teal-text lighten-1">Recuperar Senha</h4>
+            <div class="row">
+                <div class="input-field col s12 {{ $errors->has('email') ? ' has-error' : '' }}">
+                    <input id="email" type="email" class="validate" name="email" value="{{ old('email') }}" required autofocus>
+                    <label for="email">Email</label>
+                    @if ($errors->has('email'))
+                        <span class="help-block">
+                            <strong>{{ $errors->first('email') }}</strong>
+                        </span>
                     @endif
-
-                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/password/email') }}">
-                        {{ csrf_field() }}
-
-                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                            <label for="email" class="col-md-4 control-label">E-Mail</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required>
-
-                                @if ($errors->has('email'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-md-6 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
-                                    Enviar link de recuperação de senha
-                                </button>
-                            </div>
-                        </div>
-                    </form>
+                    <button class="btn waves-effect waves-light" type="submit" name="action">
+                            Enviar link de recuperação de senha
+                    </button>
                 </div>
             </div>
-        </div>
+        </form>
+        @if (session('status'))
+            <div class="card-panel teal lighten-2">
+                <span class="white-text text-darken-2">{{ session('status') }}</span>
+            </div>
+        @endif
     </div>
 </div>
 @endsection
