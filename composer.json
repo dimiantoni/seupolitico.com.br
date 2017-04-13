@@ -9,7 +9,7 @@
         "phpunit/phpunit": "~5.0",
         "guzzlehttp/guzzle": "^6.2",
         "laravel/framework": "5.3.*",
-        "predis/predis",
+        "predis/predis": "dev-master",
         "clarification/sparkpost-laravel-driver": "^1.2"
     },
     "require-dev": {
