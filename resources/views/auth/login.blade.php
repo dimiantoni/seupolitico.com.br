@@ -2,13 +2,13 @@
 
 @section('content')
 <div class="container">
-    <h3 class="teal-text lighten-1">Login</h3>
+    <h4 class="teal-text lighten-1">Login</h4>
     <div class="row">
         <form class="col s12" role="form" method="POST" action="{{ url('/login') }}">
             {{ csrf_field() }}
-            <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
+
             <div class="row">
-              <div class="input-field col s12">
+              <div class="input-field col s12 {{ $errors->has('email') ? ' has-error' : '' }}">
                 <input id="email" type="email" class="validate" name="email" value="{{ old('email') }}" required autofocus>
                 <label for="email">Email</label>
                 @if ($errors->has('email'))
@@ -18,6 +18,7 @@
                 @endif
               </div>
             </div>
+
             <div class="row">
                 <div class="input-field col s12 {{ $errors->has('password') ? ' has-error' : '' }}">
                     <input id="password" name="password" type="password" class="validate" required>
