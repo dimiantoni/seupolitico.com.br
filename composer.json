@@ -10,7 +10,8 @@
         "guzzlehttp/guzzle": "^6.2",
         "laravel/framework": "5.3.*",
         "predis/predis": "dev-master",
-        "clarification/sparkpost-laravel-driver": "^1.2"
+        "clarification/sparkpost-laravel-driver": "^1.2",
+        "artisaninweb/laravel-soap": "0.3.*"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
