@@ -15,5 +15,6 @@
 		stopPropagation: false // Stops event propagation
 	});
 	$('.carousel.carousel-slider').carousel({fullWidth: true});
+	$('select').material_select();
   }); // end of document ready
 })(jQuery); // end of jQuery name space
